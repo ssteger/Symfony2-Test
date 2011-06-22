@@ -22,12 +22,12 @@ class DemoController extends Controller
     }
 
     /**
-     * @Route("/hello/{name}", name="_demo_hello")
+     * @Route("/hello/{firstname}/{lastname}", name="_demo_hello")
      * @Template()
      */
-    public function helloAction($name)
+    public function helloAction($firstname, $lastname)
     {
-        return array('name' => $name);
+       return array('firstname' => $firstname, 'lastname' => $lastname,);
     }
 
     /**
